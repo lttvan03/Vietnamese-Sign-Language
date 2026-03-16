@@ -1,0 +1,5 @@
+Python version: 
+Python 3.10.7
+
+Pip version:
+pip 25.3
