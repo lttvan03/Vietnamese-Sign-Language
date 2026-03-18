@@ -24,7 +24,6 @@ MODELS_CONFIG = {
 SEQUENCE_LENGTH = 30
 THRESHOLD = 0.8
 
-
 model = None
 actions = None
 current_mode = "action"
@@ -176,17 +175,17 @@ with mp_holistic.Holistic(
 
         # Draw landmarks
 
-        mp_drawing.draw_landmarks(
-            image,
-            results.left_hand_landmarks,
-            mp_holistic.HAND_CONNECTIONS
-        )
+        # mp_drawing.draw_landmarks(
+        #     image,
+        #     results.left_hand_landmarks,
+        #     mp_holistic.HAND_CONNECTIONS
+        # )
 
-        mp_drawing.draw_landmarks(
-            image,
-            results.right_hand_landmarks,
-            mp_holistic.HAND_CONNECTIONS
-        )
+        # mp_drawing.draw_landmarks(
+        #     image,
+        #     results.right_hand_landmarks,
+        #     mp_holistic.HAND_CONNECTIONS
+        # )
 
         # PREDICTION (PIPELINE 1 STYLE)
         if results.left_hand_landmarks or results.right_hand_landmarks:
